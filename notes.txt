@@ -1,0 +1,17 @@
+@Autowired-->Autowiring happens by placing an instance of one bean into the desired field in an instance of another bean.
+@Component-->@Component is an annotation that allows Spring to detect our custom beans automatically. In other words, without having to write any explicit code, Spring will: Scan our application for classes annotated with @Component. Instantiate them and inject any specified dependencies into them.
+@Repository-->@Repository annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation on objects
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:testdb
+http://localhost:8080/h2-console
+
+http://localhost:8080/h2-console/login.do?jsessionid=c51678e5dccb614fee8639b5afdaa0ce
+
+------------------------------------------------------------------
+
+insert into course (id, name, author)
+values(1,'Learn AWS','in28minutes')
+
+select*from course
+
+delete from course where id=1
